@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetGuard Marine: контроль трафика для спутникового интернета</title>
+<meta name="description" content="NetGuard Marine управляет трафиком Windows на судне, на мобильном модеме и на тарифе за мегабайт. Фоновые загрузки блокируются до начала.">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">NetGuard Marine</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#features">Возможности</a>
+      <a href="#pricing">Цены</a>
+      <a href="https://github.com/KirkRo/NetGuard-releases/releases/latest">Скачать</a>
+      <a class="lang" href="../" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Windows · спутниковый и лимитный интернет</p>
+      <h1>Загрузка блокируется <em>до</em> начала.</h1>
+      <p class="lead">NetGuard Marine управляет трафиком Windows на судне, на мобильном модеме и на тарифе
+        за мегабайт. <strong>Обновления Windows, телеметрия, патчи игр и облачная синхронизация</strong>
+        блокируются до того, как потратят ваш лимит, а не считаются после.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://github.com/KirkRo/NetGuard-releases/releases/latest">Скачать: 30 дней бесплатно</a>
+        <a class="btn" href="#pricing">Цены</a>
+      </div>
+      <p class="fine">Windows 10 1809+ x64 · установщик около 3 МБ · без регистрации</p>
+    </div>
+
+    <div class="ledger" aria-label="Что NetGuard блокирует до загрузки">
+      <div class="ledger-head"><span>Журнал // до загрузки</span><span class="live">сейчас</span></div>
+      <ol>
+        <li><span class="who">svchost <small>· Windows Update</small></span><span class="tag block">БЛОК</span></li>
+        <li><span class="who">svchost <small>· BITS</small></span><span class="tag block">БЛОК</span></li>
+        <li><span class="who">svchost <small>· Delivery Optimization</small></span><span class="tag block">БЛОК</span></li>
+        <li><span class="who">Windows <small>· телеметрия</small></span><span class="tag block">БЛОК</span></li>
+        <li><span class="who">Steam, Epic, EA, Ubisoft <small>· серверы патчей</small></span><span class="tag block">БЛОК</span></li>
+        <li><span class="who">hosts <small>· домены обновлений</small></span><span class="tag block">БЛОК</span></li>
+        <li><span class="who">Облачная синхронизация <small>· по капле</small></span><span class="tag slow">ЛИМИТ</span></li>
+        <li><span class="who">Ваша игра и голосовой чат</span><span class="tag ok">РАЗРЕШЕНО</span></li>
+      </ol>
+      <div class="ledger-foot">Службы блокируются по SID службы: DNS и DHCP в том же svchost продолжают работать.</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <figure class="shot">
+      <img src="../img/01-dashboard.png" width="1440" height="900" alt="Дашборд NetGuard Marine: удержанная загрузка, расход в деньгах, график и активные процессы">
+      <figcaption>Дашборд: удержанная загрузка ждёт решения, расход в деньгах, график трафика и все программы в сети.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <p class="eyebrow">Что умеет</p>
+    <h2>У каждого мегабайта есть хозяин.</h2>
+    <p class="sub">NetGuard показывает, какая программа тратит трафик, и даёт решить до того, как деньги ушли.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Блок до загрузки</h3>
+        <ul>
+          <li>Windows Update, BITS, Delivery Optimization и телеметрия</li>
+          <li>Серверы патчей лаунчеров: игры и матчмейкинг работают</li>
+          <li>Домены обновлений: свой блок в <code>hosts</code></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Режимы</h3>
+        <ul>
+          <li>Satellite Save: вся экономия одной кнопкой</li>
+          <li>Игровая изоляция: только игра и отмеченные программы</li>
+          <li>Белый список и Economy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Неожиданный расход</h3>
+        <ul>
+          <li>Крупные загрузки и всплески скорости ждут вашего решения</li>
+          <li>Заморозка программ по простою</li>
+          <li>Поиск фоновых утечек и аномалий</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Квоты и деньги</h3>
+        <ul>
+          <li>Суточная квота с предупреждениями и отключением</li>
+          <li>Квоты и лимиты скорости для отдельных программ</li>
+          <li>Расход в деньгах по вашему тарифу, история за 90 дней</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Сети и DNS</h3>
+        <ul>
+          <li>Профили: судно, порт, дом, точка доступа; переключаются сами</li>
+          <li>Оптимизатор DNS: тринадцать серверов, шифрование DNS</li>
+          <li>Аварийный сброс возвращает интернет одной кнопкой</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Честно</h3>
+        <ul>
+          <li>Ключ проверяется на компьютере, телеметрии нет</li>
+          <li>Раз в сутки вопрос к GitHub об обновлении, около 10 КБ, отключается</li>
+          <li>Всё, что программа меняет, при удалении возвращается</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shots">
+      <figure class="shot"><img src="../img/02-processes.png" width="1440" height="900" loading="lazy" alt="Экран «Процессы и приоритеты»"><figcaption>Процессы и приоритеты: лимиты, квоты и QoS для каждой программы.</figcaption></figure>
+      <figure class="shot"><img src="../img/04-quota.png" width="1440" height="900" loading="lazy" alt="Экран «Квоты и стоимость»"><figcaption>Квоты и стоимость: суточный лимит и расход в деньгах.</figcaption></figure>
+      <figure class="shot"><img src="../img/06-hunter.png" width="1440" height="900" loading="lazy" alt="Экран «Охотник за обновлениями»"><figcaption>Охотник за обновлениями: задачи и службы, которые качают сами.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="free">
+  <div class="wrap">
+    <p class="eyebrow">Пробный период и бесплатный режим</p>
+    <h2>30 дней со всеми функциями, потом бесплатный режим или ключ.</h2>
+    <p class="sub">Пробный период начинается с первого запуска. После него программа работает в бесплатном режиме, остальное открывает ключ.</p>
+    <div class="table-scroll">
+      <table class="tiers">
+        <thead><tr><th>Без ключа</th><th>С ключом</th></tr></thead>
+        <tbody>
+          <tr><td>Мониторинг расхода</td><td>Режимы экономии: Satellite Save, игровая изоляция, белый список</td></tr>
+          <tr><td>Журнал блокировок</td><td>Защита от неожиданных загрузок</td></tr>
+          <tr><td>Ручная блокировка и разрешение</td><td>Суточные квоты программ</td></tr>
+          <tr><td>Лимит скорости программы</td><td>Приоритеты и Economy</td></tr>
+          <tr><td>Общая суточная квота</td><td>Охотник за обновлениями и экономия в браузере</td></tr>
+          <tr><td>Тип сети</td><td>Диагностика и здоровье правил</td></tr>
+          <tr><td>История за неделю</td><td>Расход в деньгах</td></tr>
+          <tr><td>Аварийный сброс</td><td>Профили сетей и автопереключение</td></tr>
+          <tr><td>Восстановление отключённых задач</td><td>История дольше недели</td></tr>
+          <tr><td>Выбор DNS-сервера и замер задержки</td><td>Шифрование DNS (DoH)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Цены</p>
+    <h2>Один ключ, один компьютер.</h2>
+    <p class="sub">Ключ, введённый до конца срока, прибавляет свой срок к оставшемуся. Переустановка программы оплаченные дни не отнимает.</p>
+
+    <div class="plans">
+      <div class="plan" id="plan-3m">
+        <h3>3 месяца</h3>
+        <div class="price">$7.99</div>
+        <div class="per">$2.66 в месяц</div>
+        <a class="btn" data-buy="3m" data-price="$7.99" href="#pricing"><span data-label>Купить</span></a>
+      </div>
+      <div class="plan" id="plan-6m">
+        <h3>6 месяцев</h3>
+        <div class="price">$13.99</div>
+        <div class="per">$2.33 в месяц · <b>выгода 12%</b></div>
+        <a class="btn" data-buy="6m" data-price="$13.99" href="#pricing"><span data-label>Купить</span></a>
+      </div>
+      <div class="plan best" id="plan-12m">
+        <span class="badge">Выгоднее всего</span>
+        <h3>12 месяцев</h3>
+        <div class="price">$22.99</div>
+        <div class="per">$1.92 в месяц · <b>выгода 28%</b></div>
+        <a class="btn primary" data-buy="12m" data-price="$22.99" href="#pricing"><span data-label>Купить</span></a>
+      </div>
+      <div class="plan" id="plan-forever">
+        <h3>Навсегда</h3>
+        <div class="price">$54.99</div>
+        <div class="per">один платёж, без срока</div>
+        <a class="btn" data-buy="forever" data-price="$54.99" href="#pricing"><span data-label>Купить</span></a>
+      </div>
+    </div>
+
+    <p class="pay-note">Цены в долларах США; налог, где он положен, добавляется при оплате.
+      Оплата <strong>картой, Apple Pay, Google Pay или PayPal</strong>, платежи принимает Paddle.com.
+      30 дней на возврат денег: <a href="../refund.html">правила возврата</a> (на английском).</p>
+    <p class="pay-note" data-shop-note hidden>Оплата картой скоро откроется. Пока заказывайте в Telegram:
+      текст заказа уже набран, продавец ответит, как оплатить.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow">Как проходит покупка</p>
+    <h2>От оплаты до работающего ключа.</h2>
+    <ol class="steps">
+      <li><strong>Оплата</strong>Выберите срок и заплатите картой, Apple Pay, Google Pay или PayPal. Paddle пришлёт чек.</li>
+      <li><strong>Ключ</strong>Ключ придёт на почту, указанную при оплате. Ключи отправляются вручную, это может занять до 48 часов.</li>
+      <li><strong>Активация</strong>В программе откройте «Лицензия», вставьте ключ и нажмите «Активировать». Интернет для этого не нужен.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Вопросы</p>
+    <h2>Перед покупкой.</h2>
+    <dl class="faq">
+      <dt>Программа сама ходит в интернет?</dt>
+      <dd>Только раз в сутки проверяет обновление, около 10 КБ, и это отключается. Ключ проверяется на вашем компьютере, телеметрии нет.</dd>
+      <dt>Можно перенести ключ на другой компьютер?</dt>
+      <dd>Ключ работает на одном компьютере. Если меняете компьютер, напишите в Telegram.</dd>
+      <dt>А если не подойдёт?</dt>
+      <dd>Попросите возврат в течение 30 дней после покупки. Подробности в <a href="../refund.html">правилах возврата</a>.</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Документы">
+      <a href="../terms.html">Условия продажи</a>
+      <a href="../refund.html">Правила возврата</a>
+      <a href="../privacy.html">Конфиденциальность</a>
+      <a href="https://t.me/kirk_ro">Поддержка: Telegram @kirk_ro</a>
+    </nav>
+    <p class="mor">Заказы оформляет наш интернет-реселлер Paddle.com. Paddle.com является продавцом (Merchant of Record)
+      по всем нашим заказам: принимает оплату, отвечает на вопросы покупателей и оформляет возвраты.</p>
+    <p>NetGuard Marine · независимая программа · документы на английском</p>
+  </div>
+</footer>
+
+<script src="../assets/shop.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetGuard Marine: traffic control for metered satellite links</title>
+<meta name="description" content="NetGuard Marine controls internet traffic on Windows for ships, mobile modems and plans billed per megabyte. Background downloads are blocked before they start.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">NetGuard Marine</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://github.com/KirkRo/NetGuard-releases/releases/latest">Download</a>
+      <a class="lang" href="ru/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Windows · satellite and metered internet</p>
+      <h1>Stop the download <em>before</em> it starts.</h1>
+      <p class="lead">NetGuard Marine controls internet traffic on Windows for ships, mobile modems and plans
+        billed per megabyte. <strong>Windows updates, telemetry, game patches and cloud sync</strong> are blocked
+        before they spend your allowance, not counted after.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://github.com/KirkRo/NetGuard-releases/releases/latest">Download: 30-day trial</a>
+        <a class="btn" href="#pricing">Prices</a>
+      </div>
+      <p class="fine">Windows 10 1809+ x64 · installer about 3 MB · no account needed</p>
+    </div>
+
+    <div class="ledger" aria-label="What NetGuard blocks before the download">
+      <div class="ledger-head"><span>Block log // before the download</span><span class="live">live</span></div>
+      <ol>
+        <li><span class="who">svchost <small>· Windows Update</small></span><span class="tag block">BLOCKED</span></li>
+        <li><span class="who">svchost <small>· BITS</small></span><span class="tag block">BLOCKED</span></li>
+        <li><span class="who">svchost <small>· Delivery Optimization</small></span><span class="tag block">BLOCKED</span></li>
+        <li><span class="who">Windows <small>· telemetry</small></span><span class="tag block">BLOCKED</span></li>
+        <li><span class="who">Steam, Epic, EA, Ubisoft <small>· patch CDNs</small></span><span class="tag block">BLOCKED</span></li>
+        <li><span class="who">hosts <small>· update domains</small></span><span class="tag block">BLOCKED</span></li>
+        <li><span class="who">Cloud sync <small>· slowed to a trickle</small></span><span class="tag slow">LIMITED</span></li>
+        <li><span class="who">Your game and voice chat</span><span class="tag ok">ALLOWED</span></li>
+      </ol>
+      <div class="ledger-foot">Services are blocked by their service SID, so DNS and DHCP inside the same svchost keep working.</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <figure class="shot">
+      <img src="img/01-dashboard.png" width="1440" height="900" alt="NetGuard Marine dashboard: held download, spending in money, traffic chart and active processes">
+      <figcaption>The dashboard: a held download waiting for your decision, spending in money, the traffic chart and every program online.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <p class="eyebrow">What it does</p>
+    <h2>Every megabyte has an owner.</h2>
+    <p class="sub">NetGuard shows which program spends traffic and lets you decide before the money is gone.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Blocking before the download</h3>
+        <ul>
+          <li>Windows Update, BITS, Delivery Optimization and telemetry</li>
+          <li>Launcher patch servers: games and matchmaking keep working</li>
+          <li>Update domains, through NetGuard's own block in <code>hosts</code></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Modes</h3>
+        <ul>
+          <li>Satellite Save: maximum saving with one button</li>
+          <li>Game isolation: only the game and programs you marked</li>
+          <li>Strict whitelist and Economy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Unexpected usage</h3>
+        <ul>
+          <li>Large downloads and speed bursts are held until you decide</li>
+          <li>Idle programs are frozen</li>
+          <li>Background leak and anomaly detectors</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Quotas and money</h3>
+        <ul>
+          <li>A daily quota with warnings and a kill switch</li>
+          <li>Quotas and speed limits for single programs</li>
+          <li>Spending shown in money at your tariff; 90 days of history</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Networks and DNS</h3>
+        <ul>
+          <li>Ship, port, home and hotspot profiles, switched automatically</li>
+          <li>DNS optimizer: thirteen public servers, encrypted DNS</li>
+          <li>Emergency reset brings the internet back with one button</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Honest by design</h3>
+        <ul>
+          <li>No licence checks online and no telemetry</li>
+          <li>One update check a day to GitHub, about 10 KB, can be turned off</li>
+          <li>Everything it changes is put back on removal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shots">
+      <figure class="shot"><img src="img/02-processes.png" width="1440" height="900" loading="lazy" alt="Processes and priorities screen"><figcaption>Processes and priorities: limits, quotas and QoS per program.</figcaption></figure>
+      <figure class="shot"><img src="img/04-quota.png" width="1440" height="900" loading="lazy" alt="Quota and cost screen"><figcaption>Quota and cost: the daily allowance and spending in money.</figcaption></figure>
+      <figure class="shot"><img src="img/06-hunter.png" width="1440" height="900" loading="lazy" alt="Update hunter screen"><figcaption>Update hunter: tasks and services that download on their own.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="free">
+  <div class="wrap">
+    <p class="eyebrow">Trial and free mode</p>
+    <h2>30 days with everything, then free mode or a key.</h2>
+    <p class="sub">The trial starts on first launch. After it the program keeps working in free mode; a key unlocks the rest.</p>
+    <div class="table-scroll">
+      <table class="tiers">
+        <thead><tr><th>Without a key</th><th>With a key</th></tr></thead>
+        <tbody>
+          <tr><td>Usage monitoring</td><td>Saving modes: Satellite Save, game isolation, whitelist</td></tr>
+          <tr><td>Block log</td><td>Protection against unexpected downloads</td></tr>
+          <tr><td>Manual block and allow</td><td>Daily quotas per program</td></tr>
+          <tr><td>Per-program speed limit</td><td>Priorities and Economy</td></tr>
+          <tr><td>Overall daily quota</td><td>Update hunter and browser saving</td></tr>
+          <tr><td>Network type</td><td>Diagnostics and rule health</td></tr>
+          <tr><td>One week of history</td><td>Traffic cost calculation</td></tr>
+          <tr><td>Emergency reset</td><td>Network profiles and automatic switching</td></tr>
+          <tr><td>Restoring disabled tasks</td><td>History longer than a week</td></tr>
+          <tr><td>Choosing a DNS server and measuring latency</td><td>Encrypted DNS (DoH)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2>One key, one computer.</h2>
+    <p class="sub">A key entered before the current term ends adds its term to what is left. Reinstalling the program does not take paid days away.</p>
+
+    <div class="plans">
+      <div class="plan" id="plan-3m">
+        <h3>3 months</h3>
+        <div class="price">$7.99</div>
+        <div class="per">$2.66 a month</div>
+        <a class="btn" data-buy="3m" data-price="$7.99" href="#pricing"><span data-label>Buy</span></a>
+      </div>
+      <div class="plan" id="plan-6m">
+        <h3>6 months</h3>
+        <div class="price">$13.99</div>
+        <div class="per">$2.33 a month · <b>save 12%</b></div>
+        <a class="btn" data-buy="6m" data-price="$13.99" href="#pricing"><span data-label>Buy</span></a>
+      </div>
+      <div class="plan best" id="plan-12m">
+        <span class="badge">Best value</span>
+        <h3>12 months</h3>
+        <div class="price">$22.99</div>
+        <div class="per">$1.92 a month · <b>save 28%</b></div>
+        <a class="btn primary" data-buy="12m" data-price="$22.99" href="#pricing"><span data-label>Buy</span></a>
+      </div>
+      <div class="plan" id="plan-forever">
+        <h3>Forever</h3>
+        <div class="price">$54.99</div>
+        <div class="per">one payment, no end date</div>
+        <a class="btn" data-buy="forever" data-price="$54.99" href="#pricing"><span data-label>Buy</span></a>
+      </div>
+    </div>
+
+    <p class="pay-note">Prices are in US dollars; tax is added at checkout where it applies.
+      Pay by <strong>card, Apple Pay, Google Pay or PayPal</strong>. Payments are processed by Paddle.com.
+      30-day money-back guarantee: see the <a href="refund.html">refund policy</a>.</p>
+    <p class="pay-note" data-shop-note hidden>Card checkout opens soon. Until then, order on Telegram:
+      the order text is typed for you, and the seller replies with payment details.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow">How buying works</p>
+    <h2>From payment to a working key.</h2>
+    <ol class="steps">
+      <li><strong>Pay</strong>Choose a term and pay by card, Apple Pay, Google Pay or PayPal. Paddle sends you a receipt.</li>
+      <li><strong>Get the key</strong>The key goes to the email you entered at checkout. Keys are sent by hand, so this can take up to 48 hours.</li>
+      <li><strong>Enter it</strong>In the program open «Лицензия» (licence), paste the key and press «Активировать» (activate). No internet is needed for this.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Questions</p>
+    <h2>Before you buy.</h2>
+    <dl class="faq">
+      <dt>Does the program go online by itself?</dt>
+      <dd>Only for one update check a day, about 10 KB, and you can turn it off. Keys are checked on your computer; there is no telemetry.</dd>
+      <dt>Is the interface in English?</dt>
+      <dd>The interface is Russian with an RU/EN switch. Screens are being translated one at a time: the dashboard and the processes screen are in English now.</dd>
+      <dt>Can I move the key to another computer?</dt>
+      <dd>A key works on one computer. If you replace the computer, write to us on Telegram.</dd>
+      <dt>What if it does not suit me?</dt>
+      <dd>Ask for a refund within 30 days of purchase. The details are in the <a href="refund.html">refund policy</a>.</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Legal">
+      <a href="terms.html">Terms and conditions</a>
+      <a href="refund.html">Refund policy</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="https://t.me/kirk_ro">Support: Telegram @kirk_ro</a>
+    </nav>
+    <p class="mor">Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant of Record
+      for all our orders. Paddle provides all customer service inquiries and handles returns.</p>
+    <p>NetGuard Marine · independent software</p>
+  </div>
+</footer>
+
+<script src="assets/shop.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

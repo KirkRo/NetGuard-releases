@@ -18,7 +18,8 @@ NetGuard Marine контролирует и жёстко ограничивае�
 по кнопке и запускается, только если его размер и SHA-256 совпали с `update.txt` из того
 же выпуска, подписанным ключом автора.
 
-Лицензионный ключ можно получить в Telegram: **@kirk_ro**.
+Лицензионный ключ можно получить в Telegram: **@kirk_ro**. Цены и условия покупки:
+[kirkro.github.io/NetGuard-releases/ru](https://kirkro.github.io/NetGuard-releases/ru/).
 
 ---
 
@@ -43,4 +44,5 @@ of about 10 KB, and you can turn it off in the settings. The installer is downlo
 when you press the button, and it runs only if its size and SHA-256 match `update.txt` from
 the same release, which is signed with the author's key.
 
-For a licence key, message **@kirk_ro** on Telegram.
+For a licence key, message **@kirk_ro** on Telegram. Prices and terms of purchase:
+[kirkro.github.io/NetGuard-releases](https://kirkro.github.io/NetGuard-releases/).
