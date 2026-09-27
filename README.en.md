@@ -52,8 +52,8 @@ old way still works too: run the new version's `NetGuardSetup.exe` over the old 
 the same folder. Your licence, rules and settings are kept.
 
 **Removing:** Settings > Apps, or `uninstall.exe` in the installation folder. Removal takes
-down all filters, cleans `hosts`, and restores Windows services, Task Scheduler tasks and
-browser settings.
+down all filters, cleans `hosts`, and restores Windows services, Task Scheduler tasks,
+browser settings and the Windows metered connection setting.
 
 **Requirements:** Windows 10 version 1809 or later, x64. There is nothing to download:
 .NET Framework 4.8 already ships with Windows. The installer is under 3 MB.
@@ -118,6 +118,11 @@ phone. Each type is a ready set of rules: on the ship, Windows updates are cut o
 daily allowance of 500 MB applies; at home there are no restrictions. The label is
 remembered against the gateway's MAC address, and the profile switches on by itself when
 you come back to that network.
+
+On ship internet and phone networks NetGuard also turns on the Windows metered connection:
+Windows Update puts off optional downloads and Microsoft apps save data on their own. A
+network you already set as metered is left alone, and the previous value comes back when
+the network type changes. To turn this off, untick the box in Settings > Networks.
 
 The pencil on a profile card changes its quota, its speed ceiling and how it treats
 updates.
@@ -218,7 +223,8 @@ window does not open, run this in PowerShell as administrator:
 ```
 
 The command removes all filters, cleans `hosts`, deletes the QoS policies, restores
-Windows services and the DNS that was in use before NetGuard, and unloads the driver. It
+Windows services, the metered connection setting and the DNS that was in use before
+NetGuard, and unloads the driver. It
 works even with no network at all.
 
 The filters also live only as long as the service does. If the service crashes, the
@@ -307,6 +313,7 @@ inspector for the selected program; here Steam is slowed by the driver to 2 MB/s
 
 - Four profiles: ship, port, home and hotspot. Networks are recognised by the gateway's MAC
   address, and the profile switches automatically.
+- Windows metered connection on ship and hotspot networks, with the previous value put back.
 
 ### DNS
 
@@ -391,6 +398,7 @@ disconnected every ten seconds. That is fixed: now only a limit you set to cut o
 | `NetGuard.exe --restore-tasks` | Re-enable Task Scheduler tasks |
 | `NetGuard.exe --reset-guards` | Reset protection thresholds to their defaults |
 | `NetGuard.exe --shaper-check` | Check the WinDivert driver by loading and unloading it, with no traffic |
+| `NetGuard.exe --metered-status` | Show whether Windows treats the current network as metered (read-only) |
 | `NetGuard.exe --console` | Run the engine in a console (debugging) |
 | `NetGuard.exe --diag-appid <exe>` | Work out why a rule does not fire |
 
