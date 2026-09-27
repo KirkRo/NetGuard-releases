@@ -47,7 +47,9 @@ request of about 10 KB, and you can turn it off in «Настройки» (setti
 new version, a banner appears above the screens. «Скачать и установить» (download and
 install) downloads the installer (about 3 MB), checks it against the signed release
 description and runs it. «Открыть GitHub» (open GitHub) opens the release page. To check
-by hand, press «Проверить сейчас» (check now) on the «О приложении» (about) screen. The
+by hand, press «Проверить сейчас» (check now) on the «О приложении» (about) screen.
+Strict whitelist, game isolation and the quota kill switch keep NetGuard itself off the
+network too: while one of them is on, no check goes out, and the card says why. The
 old way still works too: run the new version's `NetGuardSetup.exe` over the old one, into
 the same folder. Your licence, rules and settings are kept.
 
@@ -131,8 +133,9 @@ updates.
 
 Screen **05 Квоты и стоимость** (quotas and cost). Enter the price the way your contract
 states it, for example "10 per 1024 MB". Usage is then shown in money, per day and per
-quota period. The daily limit in megabytes warns at 80% and 90% and can cut the internet
-off when it runs out. That is the **kill switch**.
+quota period. The daily limit in megabytes warns at 80% and 90% and, when it runs out, can
+cut the network off for every program except the ones you explicitly allowed. That is the
+**kill switch**.
 
 ### 3. Turn on saving
 
